@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoftHouse></title>
+    <link rel="stylesheet" href="./css/main.css">
+    
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=d3fd7bc7-4624-4835-a606-c5404b5c7f19
+    &lang=ru_RU" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+        ymaps.ready(init);
+        function init(){
+            var myMap = new ymaps.Map("map", {
+                center: [59.943543,30.338928],
+                zoom: 16,
+            });
+        
+
+            var myPlacemark = new ymaps.Placemark([59.943543,30.338928], {}, {
+            iconLayout: 'default#image',
+            iconImageHref: './img/pina.svg',
+            iconImageSize: [40, 40],
+            iconImageOffset: [-20, -40]
+        });
+
+            myMap.geoObjects.add(myPlacemark);
+    }
+    </script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+
+            <div class="header__top">
+                <div class="container">
+                    <div class="header__top-row">
+                        <a href="#!"> 
+                            <img src="./img/first-screen__logo.svg" alt="">
+                        </a>
+                        <div class="header-nav">
+                            <nav class="nav">
+                                <ul class="nav__list">
+                                    <li> <a href="#!"> О комплексе </a></li>
+                                    <li> <a href="#!"> Рынок </a></li>
+                                    <li> <a href="#!"> Каталог квартир </a></li>
+                                    <li> <a href="#!"> История </a></li>
+                                    <li> <a href="#!"> Контакты </a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    
+            <div class="container">
+                <h1 
+                    class="header__title">Жилой комплекс <br> в историческом центре
+                    <a href="#benefits">
+                         <img src="./img/mouse.svg" alt="" class="header__title-icon">
+                    </a>
+                </h1>
+            </div>
+
+
+            <div class="header__footer">
+                <div class="text-right">
+                    <a href="section-map" class="info">Наб. реки Фонтанки 10-15</a>
+                </div>
+                <a href="tel:+78121234567" class="info">8 (812) 123-45-67</a>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+        <section class="benefits">
+            <div class="container">
+                <div class="benefits__row">
+
+                    <div class="benefits__item">
+                        <img src="./img/bench.svg" alt="" class="benefits__item-img">
+                        <p class="benefits__item-text">Рядом исторические <br> парки и скверы</p>
+                    </div>
+
+                    <div class="benefits__item">
+                        <img src="./img/building.svg" alt="" class="benefits__item-img">
+                        <p class="benefits__item-text">Полностью <br> обустроенный</p>
+                    </div>
+
+                    <div class="benefits__item">                        
+                        <img src="./img/fountain.svg" alt="" class="benefits__item-img">
+                        <p class="benefits__item-text">10 фонтанов <br> на территории</p>
+                    </div>
+
+                    <div class="benefits__item">
+                        <img src="./img/bicycle.svg" alt="" class="benefits__item-img">
+                        <p class="benefits__item-text">6 км <br> велодорожек</p>
+                    </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        
+        <section class="appartmens">
+            <div class="container">
+
+                <div class="appartmens-title">
+                    <h2 class="title-2">Наши квартиры</h2>
+                </div>
+
+                <div class="appartmens-cards">
+                    
+
+                    <div class="package">
+                        <div class="package2">
+                            <a href="#!" class="card">
+                                <img class="card__img" src="./img/01.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="package">
+                        <div class="package2">
+                            <a href="#!" class="card">
+                                <img class="card__img" src="./img/02.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="package">
+                        <div class="package2">
+                            <a href="#!" class="card">
+                                <img class="card__img" src="./img/03.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="package">
+                        <div class="package2">
+                            <a href="#!" class="card">
+                                <img class="card__img" src="./img/04.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="cta">
+
+            <div class="container">
+
+                <div class="cta__title">
+                    <h2 class="title-2">
+                        Хотите посмотреть?
+                    </h2>
+                </div>
+
+                <div class="cta__wrapper">
+                    <div class="cta__text">
+                        <p>ЖК LoftHouse – это проект бизнес-класса, расположенный в центре 
+                            города, на Наб. реки Фонтанки 10-15. Комплекс предлагает своим
+                             жильцам квартиры площадью от 40 до 170 кв. м. В здании будет три
+                              секции, в которых разместится всего 56 квартир.</p>
+                    </div>
+
+
+            
+                    <form action="" class="cta__form form">
+                        <input type="text" class="form__input" placeholder="Ваше имя" autocomplete="off">
+                        <input type="text" class="form__input" placeholder="Ваш телефон" autocomplete="off">
+                        
+
+                        <p class="form__privacy">
+                            *Мы никому не передаем ваши данные. <br>
+                                И не сохраняем ваш номер в базу.
+                        </p>
+
+                        <button type="submit" class="form__btn">посмотреть район</button>
+                    </form>
+        
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <section class="map">
+            <div class="container">
+                <div class="map__title">
+                    <h2 class="title-2">
+                        Район на карте
+                    </h2>
+                </div>
+
+                <div class="map__map">
+                    <div id="map" style="width: 1110px; height: 400px"></div>
+                </div>                  
+
+            </div>
+              
+        </section>
+
+        <section class="feedback">
+            <div class="container">
+
+
+                <div class="feedback__title">
+                    <h2 class="title-2">
+                        Есть вопросы?
+                    </h2>
+                </div>
+
+                <div class="feedback__form"></div>
+
+
+                <form class="feedback__form form ">
+                    <p class="form__privacy">
+                        *Мы никому не передаем ваши данные. <br>
+                            И не сохраняем ваш номер в базу.
+                    </p>
+                    <input type="text" class="form__input" placeholder="Ваше имя" autocomplete="off">
+                    <input type="text" class="form__input" placeholder="Ваш телефон" autocomplete="off">
+                    <button type="submit" class="form__btn">посмотреть район</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__row">
+
+
+                <div class="footer__logo">
+                    <a href="#!"> 
+                        <img src="./img/first-screen__logo.svg" alt="">
+                    </a>
+                </div>
+
+                
+                <div class="footer__nav">
+                    <nav>
+                        <ul class="footer__nav-list">
+                            <li> <a href="#!"> О комплексе </a></li>
+                            <li> <a href="#!"> Район </a></li>
+                            <li> <a href="#!"> Каталог квартир </a></li>
+                            <li> <a href="#!"> Ипотека </a></li>
+                            <li> <a href="#!"> Контакты </a></li>
+                        </ul>
+                    </nav>
+                </div>
+            
+
+                <div class="footer__nav">
+                    <nav>
+                        <ul class="footer__nav-list">
+                            <li> <a href="#!"> Поселение и переезд </a></li>
+                            <li> <a href="#!"> Сервисные услуги </a></li>
+                            <li> <a href="#!"> Экологическая устойчивость </a></li>
+                            <li> <a href="#!"> Инвестиционные возможности </a></li>
+                            <li> <a href="#!"> Программа лояльности </a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+
+                <div class="footer__adress">
+                    <ul class="footer__nav-list">
+                        <li> Адрес: Наб. реки Фонтанки 10-15</li>
+                        <li> <a href="tel:8 (812) 123-45-67">Телефон: 8 (812) 123-45-67</a></li>
+                        <li> Отдел продаж: 10:00 - 20:00 </li>
+                        <li> <a href="mailto:vip@lofthouse.ru" class="bold">E-mail: vip@lofthouse.ru</a></li>
+                    </ul>
+                
+
+                    <ul class="footer__socials">
+                        <li> <a href="#!"> <img src="./img/youtube.svg" alt=""> </a></li>
+                        <li> <a href="#!"> <img src="./img/vk.svg" alt=""> </a></li>
+                        <li> <a href="#!"> <img src="./img/facebook.svg" alt=""> </a></li>
+                        <li> <a href="#!"> <img src="./img/instagram.svg" alt=""> </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+   
+</body>
+</html>
